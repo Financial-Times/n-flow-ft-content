@@ -1,0 +1,292 @@
+export type FtItem = {
+  _editorialComponents?: Array<{
+    componentId?: string;
+    componentType?: string;
+    stories?: Array<{
+      alternativeTitles?: {
+        promotionalTitle?: string;
+      };
+      authorConcepts?: {
+        directType?: string;
+        id?: string;
+        prefLabel?: string;
+        relativeUrl?: string;
+      };
+      brandConcept?: {
+        directType?: string;
+        id?: string;
+        prefLabel?: string;
+        relativeUrl?: string;
+      };
+      canBeSyndicated?: string;
+      displayConcept?: {
+        directType?: string;
+        id?: string;
+        prefLabel?: string;
+        relativeUrl?: string;
+      };
+      firstPublishedDate?: any;
+      genreConcept?: {
+        directType?: string;
+        id?: string;
+        prefLabel?: string;
+        relativeUrl?: string;
+      };
+      id?: string;
+      mainImage?: {
+        description?: string;
+        height?: number;
+        ratio?: number;
+        title?: string;
+        url?: string;
+        width?: number;
+      };
+      publishedDate?: any;
+      relativeUrl?: string;
+      title?: string;
+      type?: string;
+      url?: string;
+    }>;
+  }>;
+  _lastUpdatedDateTime?: any;
+  accessLevel?: string;
+  alternativeImages?: {
+    promotionalImage?: {
+      aspectRatio?: number;
+      description?: string;
+      height?: number;
+      ratio?: number;
+      title?: string;
+      url?: string;
+      width?: number;
+    };
+  };
+  alternativeStandfirsts?: {
+    promotionalStandfirst?: string;
+  };
+  alternativeTitles?: {
+    contentPackageTitle?: string;
+    promotionalTitle?: string;
+    promotionalTitleVariant?: string;
+    shortTeaser?: string;
+  };
+  annotations?: Array<{
+    FIGI?: string;
+    apiUrl?: string;
+    attributes?: {
+      key?: string;
+      value?: string;
+    };
+    directType?: string;
+    id?: string;
+    predicate?: string;
+    prefLabel?: string;
+    preposition?: string;
+    relativeUrl?: string;
+    searchLabel?: string;
+    type?: string;
+    types?: string;
+    url?: string;
+  }>;
+  attachments?: {
+    codec?: string;
+    description?: string;
+    duration?: number;
+    height?: number;
+    mediaType?: string;
+    url?: string;
+    width?: number;
+  };
+  authorConcepts?: Array<{
+    apiUrl?: string;
+    attributes?: {
+      key?: string;
+      value?: string;
+    };
+    directType?: string;
+    id?: string;
+    predicate?: string;
+    prefLabel?: string;
+    preposition?: string;
+    relativeUrl?: string;
+    type?: string;
+    types?: string;
+    url?: string;
+  }>;
+  bodyHTML?: string;
+  bodyText?: string;
+  bodyXML?: string;
+  brandConcept?: {
+    apiUrl?: string;
+    directType?: string;
+    id?: string;
+    predicate?: string;
+    prefLabel?: string;
+    preposition?: string;
+    relativeUrl?: string;
+    type?: string;
+    types?: string;
+    url?: string;
+  };
+  byline?: string;
+  canBeSyndicated?: string;
+  comments?: {
+    enabled?: boolean;
+  };
+  containedIn?: Array<{
+    apiUrl?: string;
+    id?: string;
+  }>;
+  contains?: {
+    apiUrl?: string;
+    id?: string;
+  };
+  contentStats?: {
+    bigNumbers?: number;
+    curatedRecommended?: number;
+    externalVideos?: number;
+    graphics?: number;
+    images?: number;
+    infoBox?: number;
+    internalVideos?: number;
+    layoutSlots?: number;
+    layouts?: number;
+    pullQuotes?: number;
+    pullQuotesWithImages?: number;
+    relatedBoxes?: number;
+    responsiveImages?: number;
+    subheadings?: number;
+    videos?: number;
+  };
+  curatedRelatedContent?: Array<{
+    apiUrl?: string;
+    id?: string;
+  }>;
+  description?: string;
+  descriptionHTML?: string;
+  design?: {
+    theme?: string;
+  };
+  displayConcept?: {
+    apiUrl?: string;
+    directType?: string;
+    id?: string;
+    predicate?: string;
+    prefLabel?: string;
+    preposition?: string;
+    relativeUrl?: string;
+    type?: string;
+    types?: string;
+    url?: string;
+  };
+  fields?: string;
+  firstPublishedDate?: any;
+  frontmatter?: string;
+  genreConcept?: {
+    apiUrl?: string;
+    directType?: string;
+    id?: string;
+    predicate?: string;
+    prefLabel?: string;
+    preposition?: string;
+    relativeUrl?: string;
+    type?: string;
+    types?: string;
+    url?: string;
+  };
+  id?: string;
+  isEditorsChoice?: boolean;
+  isExperimental?: boolean;
+  isOpinion?: boolean;
+  isPremium?: boolean;
+  leadImages?: Array<{
+    aspectRatio?: number;
+    description?: string;
+    height?: number;
+    ratio?: number;
+    title?: string;
+    type?: string;
+    url?: string;
+    width?: number;
+  }>;
+  mainImage?: {
+    aspectRatio?: number;
+    description?: string;
+    height?: number;
+    ratio?: number;
+    title?: string;
+    url?: string;
+    width?: number;
+  };
+  mainVideo?: {
+    id?: string;
+    url?: string;
+  };
+  metadata?: {
+    idV1?: string;
+    prefLabel?: string;
+    primary?: string;
+    primaryTag?: boolean;
+    taxonomy?: string;
+    teaserTag?: boolean;
+    url?: string;
+  };
+  openingHTML?: string;
+  originatingParty?: string;
+  provenance?: string;
+  publishReference?: string;
+  publishedDate?: any;
+  query?: {
+    bool?: {
+      must?: {
+        regexp?: {
+          provenance?: string;
+        };
+      };
+      must_not?: {
+        regexp?: {
+          provenance?: string;
+        };
+      };
+    };
+  };
+  realtime?: boolean;
+  relativeUrl?: string;
+  standfirst?: string;
+  standout?: {
+    editorsChoice?: boolean;
+    exclusive?: boolean;
+    scoop?: boolean;
+  };
+  storyPackage?: {
+    id?: string;
+    title?: string;
+  };
+  subheading?: string;
+  summaries?: string;
+  summary?: {
+    bodyHTML?: string;
+  };
+  tableOfContents?: {
+    displayIntroduction?: boolean;
+    labelType?: string;
+    sequence?: string;
+  };
+  title?: string;
+  topper?: {
+    backgroundColour?: string;
+    headline?: string;
+    layout?: string;
+    standfirst?: string;
+  };
+  translations?: {
+    bodyHTML?: string;
+    byline?: string;
+    language?: string;
+    title?: string;
+  };
+  type?: string;
+  unpublishedContentDescription?: string;
+  url?: string;
+  webUrl?: string;
+};

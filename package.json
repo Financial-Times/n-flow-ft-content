@@ -1,0 +1,29 @@
+{
+  "name": "@financial-times/n-es-flow-libdef",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "node -r dotenv/config build.js content_2017-09-27"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Financial-Times/n-es-flow-libdef.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Financial-Times/n-es-flow-libdef/issues"
+  },
+  "homepage": "https://github.com/Financial-Times/n-es-flow-libdef#readme",
+  "devDependencies": {
+    "@financial-times/n-es-client": "^1.6.1",
+    "es-mapping-to-schema": "github:quarterto/es-mapping-to-schema#patch-1",
+    "json-schema-to-flow-type": "^0.2.6",
+    "mz": "^2.7.0"
+  },
+  "dependencies": {
+    "dotenv": "^4.0.0"
+  }
+}
