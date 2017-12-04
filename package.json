@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prepublish": "node -r dotenv/config build.js content_2017-09-27",
+    "prepublish": "npm run build && npm run update-fixture && npm test",
+    "update-fixture": "node -r dotenv/config update-fixture.js",
+    "build": "node -r dotenv/config build.js content_2017-09-27",
     "test": "flow check"
   },
   "repository": {
