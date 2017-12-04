@@ -236,20 +236,6 @@ export type FtItem = {
   provenance?: string;
   publishReference?: string;
   publishedDate?: any;
-  query?: {
-    bool?: {
-      must?: {
-        regexp?: {
-          provenance?: string;
-        };
-      };
-      must_not?: {
-        regexp?: {
-          provenance?: string;
-        };
-      };
-    };
-  };
   realtime?: boolean;
   relativeUrl?: string;
   standfirst?: string;

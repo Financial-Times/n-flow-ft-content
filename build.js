@@ -7,6 +7,7 @@ async function generateTypes(version) {
 	if(!version) throw new Error('Must provide a mappings version');
 
 	const itemMappings = (await mapping())[version].mappings.item;
+	delete itemMappings.properties.query; // what is this doing here and why is it a query
 
 	const schema = mappingToSchema(itemMappings, {
 		arrayPaths: ['annotations', 'curatedRelatedContent', 'leadImages', 'containedIn', 'authorConcepts', '_editorialComponents', '_editorialComponents.stories']
