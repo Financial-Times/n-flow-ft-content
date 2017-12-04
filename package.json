@@ -9,7 +9,7 @@
     "test": "flow check",
     "precommit": "secret-squirrel",
     "commitmsg": "secret-squirrel-commitmsg",
-    "prepush": "npm run build && npm run update-fixture && git commit -am 'update defs and fixture' && npm run test"
+    "prepush": "npm run build && npm run update-fixture && { git commit -am 'update defs and fixture' || true } && npm run test"
   },
   "repository": {
     "type": "git",
