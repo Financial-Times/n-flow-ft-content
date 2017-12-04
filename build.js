@@ -10,7 +10,7 @@ async function generateTypes(version) {
 	delete itemMappings.properties.query; // what is this doing here and why is it a query
 
 	const schema = mappingToSchema(itemMappings, {
-		arrayPaths: ['annotations', 'curatedRelatedContent', 'leadImages', 'containedIn', 'authorConcepts', '_editorialComponents', '_editorialComponents.stories']
+		arrayPaths: ['annotations', 'curatedRelatedContent', 'leadImages', 'containedIn', 'authorConcepts', '_editorialComponents', '_editorialComponents.stories', 'annotations.types', 'provenance']
 	}).validation;
 
 	schema.id = 'FtItem'; // identifier for export
@@ -20,7 +20,10 @@ async function generateTypes(version) {
 async function run(version) {
 	try {
 		const types = await generateTypes(version);
-		await fs.writeFile('index.js.flow', types, 'utf-8');
+		const content = `// @flow
+
+${types}`;
+		await fs.writeFile('index.js.flow', content, 'utf-8');
 	} catch(err) {
 		console.error(err.stack);
 		process.exit(1);

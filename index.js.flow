@@ -1,3 +1,5 @@
+// @flow
+
 export type FtItem = {
   _editorialComponents?: Array<{
     componentId?: string;
@@ -85,7 +87,7 @@ export type FtItem = {
     relativeUrl?: string;
     searchLabel?: string;
     type?: string;
-    types?: string;
+    types?: Array<string>;
     url?: string;
   }>;
   attachments?: {
@@ -110,7 +112,7 @@ export type FtItem = {
     preposition?: string;
     relativeUrl?: string;
     type?: string;
-    types?: string;
+    types?: Array<string>;
     url?: string;
   }>;
   bodyHTML?: string;
@@ -125,7 +127,7 @@ export type FtItem = {
     preposition?: string;
     relativeUrl?: string;
     type?: string;
-    types?: string;
+    types?: Array<string>;
     url?: string;
   };
   byline?: string;
@@ -176,7 +178,7 @@ export type FtItem = {
     preposition?: string;
     relativeUrl?: string;
     type?: string;
-    types?: string;
+    types?: Array<string>;
     url?: string;
   };
   fields?: string;
@@ -191,7 +193,7 @@ export type FtItem = {
     preposition?: string;
     relativeUrl?: string;
     type?: string;
-    types?: string;
+    types?: Array<string>;
     url?: string;
   };
   id?: string;
@@ -233,7 +235,7 @@ export type FtItem = {
   };
   openingHTML?: string;
   originatingParty?: string;
-  provenance?: string;
+  provenance?: Array<string>;
   publishReference?: string;
   publishedDate?: any;
   realtime?: boolean;

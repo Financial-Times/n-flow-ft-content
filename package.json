@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prepublish": "node -r dotenv/config build.js content_2017-09-27"
+    "prepublish": "node -r dotenv/config build.js content_2017-09-27",
+    "test": "flow check"
   },
   "repository": {
     "type": "git",
@@ -19,7 +20,9 @@
   "homepage": "https://github.com/Financial-Times/n-flow-ft-content#readme",
   "devDependencies": {
     "@financial-times/n-es-client": "^1.6.1",
+    "chai": "^4.1.2",
     "es-mapping-to-schema": "github:quarterto/es-mapping-to-schema#patch-1",
+    "flow-bin": "^0.60.1",
     "json-schema-to-flow-type": "^0.2.6",
     "mz": "^2.7.0"
   },
