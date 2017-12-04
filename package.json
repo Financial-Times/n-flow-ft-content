@@ -1,5 +1,5 @@
 {
-  "name": "@financial-times/n-es-flow-libdef",
+  "name": "@financial-times/n-flow-ft-content",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Financial-Times/n-es-flow-libdef.git"
+    "url": "git+https://github.com/Financial-Times/n-flow-ft-content.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "matthew.brennan@ft.com",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Financial-Times/n-es-flow-libdef/issues"
+    "url": "https://github.com/Financial-Times/n-flow-ft-content/issues"
   },
-  "homepage": "https://github.com/Financial-Times/n-es-flow-libdef#readme",
+  "homepage": "https://github.com/Financial-Times/n-flow-ft-content#readme",
   "devDependencies": {
     "@financial-times/n-es-client": "^1.6.1",
     "es-mapping-to-schema": "github:quarterto/es-mapping-to-schema#patch-1",
