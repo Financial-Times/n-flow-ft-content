@@ -4,12 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prepublish": "npm run build && npm run update-fixture && npm test",
     "update-fixture": "node -r dotenv/config update-fixture.js",
     "build": "node -r dotenv/config build.js content_2017-09-27",
     "test": "flow check",
     "precommit": "secret-squirrel",
-    "commitmsg": "secret-squirrel-commitmsg"
+    "commitmsg": "secret-squirrel-commitmsg",
+    "prepush": "npm run build && npm run update-fixture && git commit -am 'update defs and fixture' && npm run test"
   },
   "repository": {
     "type": "git",
