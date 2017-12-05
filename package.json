@@ -8,7 +8,7 @@
     "build": "node -r dotenv/config build.js content_2017-09-27",
     "precommit": "node_modules/.bin/secret-squirrel",
     "commitmsg": "node_modules/.bin/secret-squirrel-commitmsg",
-    "prepush": "npm run build && npm run update-fixture && { git commit -am 'update defs and fixture' || true ; } && make test && make verify -j3"
+    "prepush": "make test && make verify -j3"
   },
   "repository": {
     "type": "git",
