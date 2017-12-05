@@ -10,6 +10,9 @@
     "commitmsg": "node_modules/.bin/secret-squirrel-commitmsg",
     "prepush": "make test && make verify -j3"
   },
+  "engines": {
+    "node": "^8.5.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Financial-Times/n-flow-ft-content.git"
