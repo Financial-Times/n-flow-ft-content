@@ -65,6 +65,7 @@ export type FtItem = {
   };
   alternativeStandfirsts?: {
     promotionalStandfirst?: string;
+    promotionalStandfirstVariant?: string;
   };
   alternativeTitles?: {
     contentPackageTitle?: string;
@@ -81,6 +82,7 @@ export type FtItem = {
     };
     directType?: string;
     id?: string;
+    migration?: boolean;
     predicate?: string;
     prefLabel?: string;
     preposition?: string;
@@ -181,7 +183,6 @@ export type FtItem = {
     types?: Array<string>;
     url?: string;
   };
-  fields?: string;
   firstPublishedDate?: any;
   frontmatter?: string;
   genreConcept?: {
@@ -269,6 +270,7 @@ export type FtItem = {
   };
   translations?: {
     bodyHTML?: string;
+    bodyText?: string;
     byline?: string;
     language?: string;
     title?: string;

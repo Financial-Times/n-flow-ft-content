@@ -4,5 +4,14 @@ node_modules/@financial-times/n-gage/index.mk:
 
 -include node_modules/@financial-times/n-gage/index.mk
 
-test:
+fixtures/test.js: latest.version
+	node update-fixture.js
+
+index.js.flow: latest.version
+	node build.js $$(< $<)
+
+latest.version:
+	node latest-version.js
+
+test: index.js.flow fixtures/test.js
 	flow check
