@@ -7,9 +7,9 @@
     "update-fixture": "node -r dotenv/config update-fixture.js",
     "build": "node -r dotenv/config build.js content_2017-09-27",
     "test": "flow check",
-    "precommit": "secret-squirrel",
-    "commitmsg": "secret-squirrel-commitmsg",
-    "prepush": "npm run build && npm run update-fixture && { git commit -am 'update defs and fixture' || true ; } && npm run test"
+    "precommit": "node_modules/.bin/secret-squirrel",
+    "commitmsg": "node_modules/.bin/secret-squirrel-commitmsg",
+    "prepush": "npm run build && npm run update-fixture && { git commit -am 'update defs and fixture' || true ; } && npm run test && make verify -j3"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,7 @@
   "homepage": "https://github.com/Financial-Times/n-flow-ft-content#readme",
   "devDependencies": {
     "@financial-times/n-es-client": "^1.6.1",
+    "@financial-times/n-gage": "^1.17.2",
     "@financial-times/secret-squirrel": "^2.5.16",
     "chai": "^4.1.2",
     "es-mapping-to-schema": "github:quarterto/es-mapping-to-schema#patch-1",

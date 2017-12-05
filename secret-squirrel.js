@@ -3,7 +3,8 @@ module.exports = {
 		allow: [
 			'.flowconfig',
 			'index.js.flow',
-			'package-lock.json'
+			'package-lock.json',
+			'makefile',
 		],
 		allowOverrides: []
 	},
