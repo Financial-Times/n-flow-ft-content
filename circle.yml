@@ -1,6 +1,6 @@
 machine:
   node:
-    version: 8.0.0
+    version: 8
 deployment:
   release:
     tag: /^v?\d+\.\d+\.\d+(?:-beta\.\d+)?$/
