@@ -14,19 +14,21 @@ If you don't want to introduce a build step for your code, use the [Flow comment
 
 Run `flow check` as part of your CI tests, and maybe in a `precommit` hook. Encourage your developers to add a Flow integration to their editor.
 
-### Atom
+### Editor integration
+
+#### Atom
 
 Install [`atom-ide-ui`](https://atom.io/packages/atom-ide-ui) and [`ide-flowtype`](https://atom.io/packages/ide-flowtype). Alternatively, you could install the whole of [Nuclide](https://nuclide.io/).
 
-### VS Code
+#### VS Code
 
 Install [Flow Language Support](https://marketplace.visualstudio.com/items?itemName=flowtype.flow-for-vscode) or [vscode-flow-ide](https://marketplace.visualstudio.com/items?itemName=gcazaciuc.vscode-flow-ide).
 
-### Sublime Text
+#### Sublime Text
 
 Install [FlowIDE](https://packagecontrol.io/packages/FlowIDE), and optionally [SublimeLinter-flow](https://packagecontrol.io/packages/SublimeLinter-flow) and the [Babel](https://packagecontrol.io/packages/Babel) syntax highlighting.
 
-### Other editors
+#### Other editors
 
 https://flow.org/en/docs/editors/
 
