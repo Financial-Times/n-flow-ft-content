@@ -1,3 +1,7 @@
+# Unmaintained
+
+These definitions are usable, but not planned to be updated past `content_2017-12-04`. New projects will probably be using Typescript anyway.
+
 # n-flow-ft-content
 
 Flow type definition for a piece of FT content, as represented in Elastic Search. Automatically generated on publish from the ES mappings.
