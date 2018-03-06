@@ -13,7 +13,7 @@ async function updateFixture() {
 
 	import type {FtItem} from '../';
 
-	const item: FtItem = ${JSON.stringify(item)}`;
+	const item: FtItem = ${JSON.stringify(item, null, 2)}`;
 
 	await fs.writeFile('fixtures/test.js', content, 'utf-8');
 }
