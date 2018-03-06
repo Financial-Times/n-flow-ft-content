@@ -10,8 +10,10 @@ fixtures/test.js: latest.version
 index.js.flow: latest.version
 	node build.js $$(< $<)
 
-latest.version:
+latest.version: ALWAYS_OUTDATED
 	node latest-version.js
 
 test: index.js.flow fixtures/test.js
 	flow check
+
+ALWAYS_OUTDATED:
