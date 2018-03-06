@@ -3,6 +3,12 @@ const fs = require('mz/fs');
 
 async function updateFixture() {
 	const item = await get('146da558-4dee-11e3-8fa5-00144feabdc0');
+
+	// trim long string fields to a reasonable length so the build output is readable
+	['bodyHTML', 'openingHTML', 'bodyText'].forEach(
+		prop => item[prop] = item[prop].slice(0, 100)
+	);
+
 	const content = `// @flow
 
 	import type {FtItem} from '../';
